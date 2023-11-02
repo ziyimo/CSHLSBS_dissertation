@@ -1,0 +1,101 @@
+\documentclass[phd,bottom,sig]{usbthesis}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{afterpage}
+\usepackage{hhline}
+\usepackage{url}
+\usepackage{hyperref} % see the file hyperref.cfg for options
+\usepackage{nameref}
+%\usepackage{indentfirst}
+\usepackage{footmisc} % provides \footref and \mpfootnotemark commands
+\usepackage{xspace}
+%\usepackage[authoryear,round,sort&compress]{natbib}
+\usepackage[
+backend=biber,
+style=apa,
+sorting=nyt
+]{biblatex}
+\addbibresource{SIAref.bib}
+\addbibresource{DAref.bib}
+\AtEveryBibitem{
+    \clearfield{note}
+}
+\AtBeginRefsection{\GenRefcontextData{sorting=ynt}}
+\AtEveryCite{\localrefcontext[sorting=ynt]}
+\DeclareUnicodeCharacter{03B2}{$\beta$}
+
+\usepackage{pdfpages}
+%\usepackage[nottoc]{tocbibind}
+\input{mathdefs}
+\input{callcommands}
+\hyphenation{put words here which LaTeX does not hy-phen-ate pro-per-ly}
+
+\author{Ziyi Mo}%
+\title{Scalable and robust deep-learning methods power evolutionary-genetic studies of biobank-scale population genomic data}%
+
+\month{January}
+\year{2024}%
+\program{Biological Sciences}%
+\director{Adam~C.~Siepel}{Professor, Simons Center for Quantitative Biology}%
+
+\chairman{Jesse~Gillis}{Associate Professor, Department of Physiology}{University of Toronto}%
+\fstmember{David~M.~McCandlish}{Associate Professor, Simons Center for Quantitative Biology}
+\sndmember{Peter~K.~Koo}{Assistant Professor, Simons Center for Quantitative Biology}%
+\outmember{Andrew~D.~Kern}{Associate Professor, The Institute of Ecology and Evolution}{University of Oregon}%
+\dean{Zachary B. Lippman}%
+
+\begin{document}
+
+\singlespacing %
+\pagenumbering{roman} %
+\maketitle %
+%\makeapproval %
+
+\begin{abstract}
+\input{sections/abstract}
+\end{abstract}
+\tableofcontents %
+\listoffigures %
+%
+\listoftables %
+%
+\begin{acknowledgements}
+    \input{sections/acknowledgements}
+\end{acknowledgements}
+\pagestyle{thesis}
+\newpage
+\pagenumbering{arabic}
+
+\include{sections/chapter1Intro}
+\include{sections/chapter2SIA}
+\include{sections/chapter3Monarcha}
+\include{sections/chapter4DA}
+\include{sections/chapter5Conclusion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\baselinestretch}{1}
+\normalsize
+
+\clearpage
+\newpage
+\phantomsection%
+\addcontentsline{toc}{chapter}{\numberline{}{Bibliography}}%
+
+\printbibliography
+
+\clearpage
+\newpage
+
+%\appendix
+%\include{sections/appendixSdkr}
+%\include{sections/appendixNOON}
+
+\end{document}
