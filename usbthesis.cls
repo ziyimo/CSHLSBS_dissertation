@@ -216,6 +216,18 @@ recognize option: \CurrentOption}}
      \begin{center}}%
      {\end{center}\vspace*{\fill}\clearpage}
 
+\newenvironment{acronymls}{%
+     \if@top
+    \setmarginsrb{1.5in}{1in}{1.5in}{1in}{0.125in}{0.2in}{0.125in}{0.5in}
+     \fi
+     \clearpage%
+     \phantomsection
+     \addcontentsline{toc}{chapter}{\protect\numberline{}{List of Acronyms}}
+     \chapter*{List of Acronyms}%
+     \thispagestyle{empty}%
+     \pagestyle{empty}}%
+     {\clearpage}
+
 \newenvironment{acknowledgements}{%
      \if@top
     \setmarginsrb{1.5in}{1in}{1.5in}{1in}{0.125in}{0.2in}{0.125in}{0.5in}

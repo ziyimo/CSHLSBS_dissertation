@@ -17,7 +17,8 @@
 %\usepackage{indentfirst}
 \usepackage{footmisc} % provides \footref and \mpfootnotemark commands
 \usepackage{xspace}
-%\usepackage[authoryear,round,sort&compress]{natbib}
+\usepackage{acronym}
+
 \usepackage[
 backend=biber,
 style=apa,
@@ -64,9 +65,12 @@ sorting=nyt
 \end{abstract}
 \tableofcontents %
 \listoffigures %
-%
 \listoftables %
-%
+
+\begin{acronymls}
+    \input{sections/acro_list}    
+\end{acronymls}
+
 \begin{acknowledgements}
     \input{sections/acknowledgements}
 \end{acknowledgements}
