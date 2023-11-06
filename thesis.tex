@@ -2,18 +2,27 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{color}
+\usepackage[table]{xcolor}
 \usepackage{bm}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{setspace}
 \usepackage{array}
 \usepackage{tabularx}
+\usepackage{rotating}
 \usepackage{multirow}
 \usepackage{afterpage}
 \usepackage{hhline}
 \usepackage{url}
 \usepackage{hyperref} % see the file hyperref.cfg for options
 \usepackage{nameref}
+\hypersetup{
+%frenchlinks=true
+colorlinks=true,
+linkcolor=black,
+citecolor=blue,
+urlcolor=blue
+}
 %\usepackage{indentfirst}
 \usepackage{footmisc} % provides \footref and \mpfootnotemark commands
 \usepackage{xspace}
@@ -32,6 +41,7 @@ sorting=nyt
 \AtBeginRefsection{\GenRefcontextData{sorting=ynt}}
 \AtEveryCite{\localrefcontext[sorting=ynt]}
 \DeclareUnicodeCharacter{03B2}{$\beta$}
+\rowcolors{2}{gray!10}{white} % for alternating row colors in tables
 
 \usepackage{pdfpages}
 %\usepackage[nottoc]{tocbibind}
