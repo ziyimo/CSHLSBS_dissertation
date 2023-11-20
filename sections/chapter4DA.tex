@@ -2,5 +2,17 @@
 
 \textit{Content of this chapter was previously uploaded to bioRxiv (2023) under the title ``Domain-adaptive neural networks improve supervised machine learning based on simulated population genetic data" by Ziyi Mo and Adam Siepel. The manuscript was published in PLoS Genetics (2023) under the same title.}
 
-\section{Part 1}
-blabla
+\section{Abstract}
+Investigators have recently introduced powerful methods for population genetic inference that rely on supervised machine learning from simulated data. Despite their performance advantages, these methods can fail when the simulated training data does not adequately resemble data from the real world. Here, we show that this “simulation mis-specification” problem can be framed as a “domain adaptation” problem, where a model learned from one data distribution is applied to a dataset drawn from a different distribution. By applying an established domain-adaptation technique based on \iac{GRL}, originally introduced for image classification, we show that the effects of simulation mis-specification can be substantially mitigated. We focus our analysis on two state-of-the-art deep-learning population genetic methods—\ac{SIA}, which infers positive selection from features of the \acf{ARG}, and ReLERNN, which infers recombination rates from genotype matrices. In the case of \ac{SIA}, the domain adaptive framework also compensates for \ac{ARG} inference error. Using the \ac{dadaSIA} model, we estimate improved selection coefficients at selected loci in the 1000 Genomes CEU population. We anticipate that domain adaptation will prove to be widely applicable in the growing use of supervised machine learning in population genetics.
+
+\section{Introduction}
+
+
+\section{Results}
+
+\section{Discussion}
+
+\section{Methods}
+
+\section{Supplementary material}
+Supporting information is available at \href{https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1011032#sec018}{\textit{PLoS Genetics} online}. All code used in this study are available at \href{https://github.com/ziyimo/popgen-dom-adapt}{GitHub}. The 1000 Genomes data are available \href{https://www.internationalgenome.org/data}{online}.
