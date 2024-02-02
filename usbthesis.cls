@@ -224,8 +224,8 @@ recognize option: \CurrentOption}}
      \phantomsection
      \addcontentsline{toc}{chapter}{\protect\numberline{}{List of Acronyms}}
      \chapter*{List of Acronyms}%
-     \thispagestyle{empty}%
-     \pagestyle{empty}}%
+     \thispagestyle{plain}%
+     \pagestyle{plain}}%
      {\clearpage}
 
 \newenvironment{acknowledgements}{%
@@ -236,8 +236,8 @@ recognize option: \CurrentOption}}
      \phantomsection
      \addcontentsline{toc}{chapter}{\protect\numberline{}{Acknowledgements}}
      \chapter*{Acknowledgements}%
-     \thispagestyle{empty}%
-     \pagestyle{empty}}%
+     \thispagestyle{plain}%
+     \pagestyle{plain}}%
      {\clearpage}
 
 \renewenvironment{thebibliography}[1]
