@@ -1,5 +1,16 @@
-### CSHL SBS Dissertation
+### Scalable and robust deep-learning methods power evolutionary-genetic studies of biobank-scale population genomic data
 
+#### Summary
+
+This is a dissertation submitted to the Cold Spring Harbor Laboratory School of Biological Sciences for my Ph.D. degree in Computational Biology. The thesis consists of
+
+* A general introductory chapter 1 that touches upon many technical and methodolgical topics related to my graduate work, primarily evolutionary modeling and AI/ML. Reviews cited in this chapter provide much more in-depth discussion on these topics.
+
+* Three stand-alone chapters, each presenting the entirety of a research project. These chapters are all peer-reviewed and published in academic journals.
+
+* A concluding chapter 5 that discusses my graduate work as a whole and raises several promising avenues for future work. I am most excited about this chapter, __which outlines several ideas that occurred to me in light of the rise of generative AI as I wrapped up my graduate work__, and I look forward to seeing these ideas come to fruition.
+
+<p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
 
 #### Credits
 
